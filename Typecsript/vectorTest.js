@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var vector_1 = require("./vector");
+var vector1 = new vector_1.Vector(4, 34);
+var v1 = new vector_1.Vector(4, 50);
+vector1.Print();
+vector1.Add(v1);
+vector1.Print();
+vector1.Subs(v1);
+vector1.Print();
+vector1.Mult(v1);
+vector1.Print();
+vector1.multNumber(3);
+vector1.Print();

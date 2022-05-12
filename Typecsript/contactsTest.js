@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var contacts_1 = require("./contacts");
+var person_1 = require("./person");
+var persona3 = new person_1.Person("Laura", 28, "Calle Almonte");
+var persona4 = new person_1.Person("Don Alvaro", 28, "Sevilla");
+var persona5 = new person_1.Person("Jorge", 30, "Cantabria");
+var persona6 = new person_1.Person("Ana", 29, "Mostoles");
+var dat = new contacts_1.Contacts();
+dat.people.push(persona3, persona4, persona5, persona6);
+console.log(dat.people);
