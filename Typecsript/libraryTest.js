@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var library_1 = require("./library");
+var book_1 = require("./book");
+var book4 = new book_1.Book("Hola Javascript", 100, "CB12548-PED4587", "Mister Javas", "Master Martin");
+var book5 = new book_1.Book("Suicidarse con Javascript", 200, "00128448-PED1257", "Manuel Piris", "Casa Central");
+var libreria = new library_1.Library([book4, book5], "Calle 12 Horas Clase", "Meta Tiro");
+console.log(libreria.toStringBook());
+console.log(libreria.getNumberOfBook());
+console.log(libreria.findByAuthor("Mister Javas"));
